@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anson portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Lora:wght@400;600&family=Montserrat:wght@400;500&family=Nosifer&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header hero flex-justify-center">
       <p>Hello, curious soul!💡</p>
-      <h1>I am Anson Dsouza</h1>
+      <h1>I am <span class="name-highlighter">Anson Dsouza</span></h1>
       <p>UI Engineer | Front-End Developer</p>
       <a href="#contact">Let's Talk</a>
     </header>
     <section class="about">
       <h2>Self-Identity</h2>
-      <p>
+      <p class="greet-msg">
         Greetings! I work with React at my job, and I'm on a continuous quest to
         master front-end technologies. I'm passionate about creating
         pixel-perfect web experiences. Let's embark on this journey together to
@@ -49,10 +52,11 @@
         </article>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects section gap">
       <h2>My Carfts</h2>
-      <article class="project-card">
-        <img class="project-icon" />
+     
+      <article class="project-card flex-center">
+        <img class="project-icon " src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWucrmCSbdSllLSOlOr8_caZ3ZAyhwMyeFXuBcvHM6IZ80qnKUThvhZNMAeNAOGsg06RvANWaqiFNQLrnxDdvYMIeC5755OFF8rz.jpg?r=112" />
         <div class="project-details">
           <h3>Miniflix</h3>
           <p>
@@ -67,8 +71,8 @@
           </ul>
         </div>
       </article>
-      <article>
-        <img class="project-icon" />
+      <article class="project-card flex-center">
+        <img class="project-icon" src="https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Use-IPython_Watermarked.95581daa10ff.jpg" />
         <div class="project-details">
           <h3>Miniflix</h3>
           <p>
@@ -83,8 +87,8 @@
           </ul>
         </div>
       </article>
-      <article>
-        <img class="project-icon" src="" />
+      <article class="project-card flex-center">
+        <img class="project-icon" src="https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg"/>
         <div class="project-details">
           <h3>Miniflix</h3>
           <p>
@@ -101,7 +105,7 @@
       </article>
     </section>
     <section class="experience"></section>
-    <section class="contact" id="contact">
+    <section class="contact" >
         <h2>Wanna Connect!</h2>
         <div>
             <div>
