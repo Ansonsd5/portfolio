@@ -18,7 +18,23 @@
   --background-color-dark: hsl(
     var(--background-hue) var(--background-sat) calc(var(--background-lit) - 5%)
   );
+
+  --secondary-color: hsl(43.03deg 98.02% 60.39%);
 }
+
+html{
+  position: relative;
+}
+
+/* html::after{
+  content: '';
+  width: 2px;
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  background: blue;
+  top: 0px;
+} */
 
 html,
 body {
@@ -100,6 +116,7 @@ section {
 
 .skills{
     display: flex;
+    margin-top: 20px;
 }
 .project-card{
     display: flex;
@@ -114,6 +131,15 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.languages-row>li{
+  box-shadow: inset 0 6px 6px hsl(0deg 0% 0% / 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
 }
 .name-highlighter{
   color:hsl(43.03deg 98.02% 60.39%);
@@ -135,6 +161,7 @@ section {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     height: 95vh;
     font-size: 32px;
+    z-index: 0;
 }
 
 
@@ -157,7 +184,7 @@ section {
 article > img{
   width: 200px;
   aspect-ratio: 3/2;
-  
+
 }
 
 .project-card{
@@ -177,3 +204,100 @@ margin-top: 0px !important;
 .gap{
   gap: 20px;
 }
+
+.letstalk{
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  border-radius: 4px ;
+  position: relative;
+  border: 6px;
+  border: 6px;
+  font-size: 16px;
+  z-index: 12;
+
+ 
+}
+
+
+.about>h2,
+.right-side-skills>h3,
+.left-side-skills>h3{
+  color:hsl(43.03deg 98.02% 60.39%);
+  
+}
+
+.left-side-skills,.right-side-skills{
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.dashed-border-left{
+  border-left: 2px dashed var(--secondary-color);
+  
+}
+
+/* .projects:last-child{
+  margin-bottom: 20px;
+} */
+
+.projects{
+  padding-bottom: 20px;
+}
+
+.projects>h2,.project-details>h3{
+  color: var(--secondary-color);
+}
+
+.contact-details{
+
+}
+
+.contact>h2,.phone-number,.email,.experience>h2{
+  color: var(--secondary-color);
+
+}
+
+.experience-card{
+  width: 20%;
+}
+
+.experience h3,
+.experience p {
+  margin: 0;
+}
+
+.experience li {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.experience li::before{
+  content: '';
+  display: inline;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: -24px;
+  top: 14px;
+  background: var(--secondary-color);
+}
+
+.experience li::after{
+  content: '';
+  width: 4px;
+ display: block;
+  height: calc(100% - 36px);
+  position: absolute;
+  left: -20px;
+  top: 36px;
+  background: var(--secondary-color);
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header{
+    font-size: 24px;
+  }
+  }

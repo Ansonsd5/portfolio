@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anson portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Lora:wght@400;600&family=Montserrat:wght@400;500&family=Nosifer&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Lora:wght@400;600&family=Montserrat:wght@400;500&family=Nosifer&family=Playfair+Display+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header class="header hero flex-justify-center">
-      <p>Hello, curious soul!💡</p>
+      <p>Hello, curious soul!</p>
       <h1>I am <span class="name-highlighter">Anson Dsouza</span></h1>
       <p>UI Engineer | Front-End Developer</p>
-      <a href="#contact">Let's Talk</a>
+      <a class="letstalk" href="#contact">Let's Talk</a>
     </header>
-    <section class="about">
+    <section class="about flex-center">
       <h2>Self-Identity</h2>
       <p class="greet-msg">
         Greetings! I work with React at my job, and I'm on a continuous quest to
@@ -24,8 +27,8 @@
         pixel-perfect web experiences. Let's embark on this journey together to
         create digital magic!
       </p>
-      <div class="skills">
-        <article>
+      <div class="skills ">
+        <article class="left-side-skills flex-center">
           <h3>Building and Breaking stuff</h3>
           <p>
             Love avid engineering problems. Like breaking code and fixing them.
@@ -35,28 +38,51 @@
           <p>HTML, CSS , JavaScript</p>
 
           <h3>Dev Tools I use</h3>
-          <p>vs code, git, developer tools</p>
+          <p>vs code, git,gitlab, chrome developer tools</p>
 
-          <!-- <h3>One pro-tip for you</h3> -->
-          <!-- <p>*{border : 1px solid red} this will save you lots of time</p> -->
+          
         </article>
-        <article>
+        <article class="right-side-skills flex-center dashed-border-left">
           <h3>My design Expertise</h3>
           <p>Define goals and objectives, Maintain Consistency</p>
 
           <h3>Design tool I use</h3>
           <p>Figma Invision</p>
 
-          <h3>Ctrl + Shift + I</h3>
-          <p>Unleash Your Inner Web Wizard!</p>
+          <h3>One pro-tip for you</h3>
+          <p>*{border : 1px solid red} this will save you lots of time</p>
         </article>
       </div>
     </section>
     <section class="projects section gap">
       <h2>My Carfts</h2>
-     
+
       <article class="project-card flex-center">
-        <img class="project-icon " src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWucrmCSbdSllLSOlOr8_caZ3ZAyhwMyeFXuBcvHM6IZ80qnKUThvhZNMAeNAOGsg06RvANWaqiFNQLrnxDdvYMIeC5755OFF8rz.jpg?r=112" />
+        <!-- <a href="https://netflix-gpt-4e981.web.app/browse"> -->
+        <img
+          class="project-icon"
+          src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWucrmCSbdSllLSOlOr8_caZ3ZAyhwMyeFXuBcvHM6IZ80qnKUThvhZNMAeNAOGsg06RvANWaqiFNQLrnxDdvYMIeC5755OFF8rz.jpg?r=112"
+        />
+        <div class="project-details">
+          <h3>Miniflix</h3>
+          <p>
+            Discover your perfect movie match with our React-powered app, fueled
+            by GPT AI magic. Let the movie journey begin!
+          </p>
+          <ul class="languages-row">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Tailwind</li>
+          </ul>
+        </div>
+      <!-- </a> -->
+      </article>
+      <article class="project-card flex-center">
+        <img
+          class="project-icon"
+          src="https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Use-IPython_Watermarked.95581daa10ff.jpg"
+        />
         <div class="project-details">
           <h3>Miniflix</h3>
           <p>
@@ -72,23 +98,10 @@
         </div>
       </article>
       <article class="project-card flex-center">
-        <img class="project-icon" src="https://realpython.com/cdn-cgi/image/width=480,format=auto/https://files.realpython.com/media/How-to-Use-IPython_Watermarked.95581daa10ff.jpg" />
-        <div class="project-details">
-          <h3>Miniflix</h3>
-          <p>
-            Discover your perfect movie match with our React-powered app, fueled
-            by GPT AI magic. Let the movie journey begin!
-          </p>
-          <ul class="languages-row">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>React</li>
-            <li>Tailwind</li>
-          </ul>
-        </div>
-      </article>
-      <article class="project-card flex-center">
-        <img class="project-icon" src="https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg"/>
+        <img
+          class="project-icon"
+          src="https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg"
+        />
         <div class="project-details">
           <h3>Miniflix</h3>
           <p>
@@ -104,30 +117,60 @@
         </div>
       </article>
     </section>
-    <section class="experience"></section>
-    <section class="contact" >
-        <h2>Wanna Connect!</h2>
-        <div>
-            <div>
-                <article>
-                    <h3>Phone Number</h3>
-                    <a href="tel:+91-9148824996">+91-9148824996</a>
-                    
-                </article>
-                <article>
-                    <h3>Email</h3>
-                    <a href="mailto:anson11sd@gmail.com">anson11sd@gmail.com</a>
-                </article>
-            </div>
-            <ul class="languages-row">
-                <li ><img src="https://img.icons8.com/?size=48&id=Qfh1PDlzLB72&format=png"/></li>
-                <li><img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png"/></li>
-                <li><img src="https://img.icons8.com/?size=48&id=84884&format=png"/></li>
-                
-            </ul>
-        </div>
+    <section class="experience flex-justify-center">
+      <h2>Over the Years!</h2>
+      <div class="experience-card flex-justify-center ">
+      <ul>
+        <li>
+          <time>Sep 2021 - Present</time>
+          <h3>Front-end Developer</h3>
+          <p>Developer web applications using React</p>
+        </li>
+        <li>
+          <time>Sep 2021 - Present</time>
+          <h3>Front-end Developer</h3>
+          <p>Developer web applications using React</p>
+        </li>
+        <li>
+          <time>Sep 2021 - Present</time>
+          <h3>Front-end Developer</h3>
+          <p>Developer web applications using React</p>
+        </li>
+      </ul>
+    </div>
     </section>
-    <footer class="footer"><p>
-        © 2023 <span>Anson Dsouza</span> Profile. All rights reserved.</p></footer>
+    <section class="contact">
+      <h2>Wanna Connect!</h2>
+      <div>
+        <div class="contact-details flex-justify-center gap">
+          <article>
+            <h3 class="phone-number">Phone Number</h3>
+            <a href="tel:+91-9148824996">+91-9148824996</a>
+          </article>
+          <article>
+            <h3 class="email">Email</h3>
+            <a href="mailto:anson11sd@gmail.com">anson11sd@gmail.com</a>
+          </article>
+        </div>
+        <ul class="languages-row">
+          <li>
+            <img
+              src="https://img.icons8.com/?size=48&id=Qfh1PDlzLB72&format=png"
+            />
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png"
+            />
+          </li>
+          <li>
+            <img src="https://img.icons8.com/?size=48&id=84884&format=png" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>© 2023 <span>Anson Dsouza</span> Profile. All rights reserved.</p>
+    </footer>
   </body>
 </html>
