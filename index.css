@@ -142,10 +142,12 @@ section {
   border-radius: 6px;
 }
 .name-highlighter{
-  color:hsl(43.03deg 98.02% 60.39%);
-  background-color: hsl(190deg 80% 37% / 26%);
+  color:#5c3d81;
+  background-color: hsl(43.03deg 98.02% 60.39% /0.97);
   ;
   padding: 0px 4px;
+  font-family: "EB Garamond";
+  font-weight: 700;
 }
 
 .header{
@@ -207,13 +209,16 @@ margin-top: 0px !important;
 
 .letstalk{
   padding: 0.5rem 1.5rem;
-  background-color: var(--primary-color);
+  background-color: hsl(43.03deg 98.02% 60.39% /0.97);
   border-radius: 4px ;
   position: relative;
   border: 6px;
   border: 6px;
   font-size: 16px;
   z-index: 12;
+  cursor: pointer;
+  color: #5c3d81;
+  font-weight: bold;
 
  
 }
@@ -259,6 +264,10 @@ margin-top: 0px !important;
 
 .experience-card{
   width: 20%;
+}
+
+.experience-card>ul>li>h3{
+ color:var(--secondary-color)
 }
 
 .experience h3,
